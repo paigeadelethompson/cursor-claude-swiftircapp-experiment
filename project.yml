@@ -1,0 +1,29 @@
+name: IRCClient
+options:
+  bundleIdPrefix: com.ircclient
+  deploymentTarget:
+    iOS: 15.0
+    macOS: 14.0
+
+packages:
+  NIO:
+    url: https://github.com/apple/swift-nio.git
+    from: 2.0.0
+  NIOTransportServices:
+    url: https://github.com/apple/swift-nio-transport-services.git
+    from: 1.0.0
+
+targets:
+  IRCClient:
+    type: application
+    platform: [iOS, macOS]
+    sources: 
+      - path: IRCClient
+    dependencies:
+      - package: NIO
+      - package: NIOTransportServices
+    settings:
+      base:
+        ENABLE_BACKGROUND_MODES: true
+        INFOPLIST_FILE: IRCClient/Info.plist
+

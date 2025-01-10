@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CC7B3D202F1D6215A9A6FAC /* ConnectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F412B1A30A0AF97EC036D /* ConnectionViewModel.swift */; };
+		2CDCC4B72C34B1232490C100 /* ConnectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F412B1A30A0AF97EC036D /* ConnectionViewModel.swift */; };
+		408230CBE7A0855A215C25CB /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = D97ACD7EB16A10F04048AAF1 /* NIO */; };
+		60009B7E09FC989DA21CD39B /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF76F7146C38C4519C6DA /* ConnectionView.swift */; };
+		6E984CFCCF52B83B1F9A7AD4 /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = BE41F353468B7EF830899CFB /* NIOTransportServices */; };
+		9398D20E7AB40D33A96CE05E /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 8C8C7B1DC952AB128D3D1528 /* NIO */; };
+		AD0E821E626BA6D80692F1D0 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF76F7146C38C4519C6DA /* ConnectionView.swift */; };
+		CA31A517B4291896F3CBDBDF /* IRCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E35F2C73F1439ADF74AA6F /* IRCMessage.swift */; };
+		DA33D682FA8835F84FAFB367 /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = 71C71146F2B5AD11132DD72E /* NIOTransportServices */; };
+		E3254B5704E0986F50E7CBE0 /* IRCConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FC0D4A88A76B904416F6C6 /* IRCConnection.swift */; };
+		F0BEB1A3A8E11A352E3AA616 /* IRCConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FC0D4A88A76B904416F6C6 /* IRCConnection.swift */; };
+		FDA3644E7D3701B23A3B9A6E /* IRCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E35F2C73F1439ADF74AA6F /* IRCMessage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F6F412B1A30A0AF97EC036D /* ConnectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewModel.swift; sourceTree = "<group>"; };
+		39E35F2C73F1439ADF74AA6F /* IRCMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRCMessage.swift; sourceTree = "<group>"; };
+		3C36AE5AAB04DAEDF50D716A /* IRCClient.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = IRCClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FC0D4A88A76B904416F6C6 /* IRCConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRCConnection.swift; sourceTree = "<group>"; };
+		C1DCF76F7146C38C4519C6DA /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
+		D077E7ADC33A50CBAC7CD765 /* IRCClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRCClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		298B5E951CE2707544071B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9398D20E7AB40D33A96CE05E /* NIO in Frameworks */,
+				6E984CFCCF52B83B1F9A7AD4 /* NIOTransportServices in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81049F9CE16D636215EC35D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408230CBE7A0855A215C25CB /* NIO in Frameworks */,
+				DA33D682FA8835F84FAFB367 /* NIOTransportServices in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE65482D10BD7CC0EFB39B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39E35F2C73F1439ADF74AA6F /* IRCMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D2B9EA0AFBF56D01F8B12C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1DCF76F7146C38C4519C6DA /* ConnectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31B008FD406FFEFB48ECE67A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2F6F412B1A30A0AF97EC036D /* ConnectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4175A7178AC2D902A2A6C5B9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				70FC0D4A88A76B904416F6C6 /* IRCConnection.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8E9DABE9ABFEAFD3A52E94FC /* IRCClient */ = {
+			isa = PBXGroup;
+			children = (
+				0FE65482D10BD7CC0EFB39B0 /* Models */,
+				4175A7178AC2D902A2A6C5B9 /* Networking */,
+				31B008FD406FFEFB48ECE67A /* ViewModels */,
+				1D2B9EA0AFBF56D01F8B12C9 /* Views */,
+			);
+			path = IRCClient;
+			sourceTree = "<group>";
+		};
+		950DE068D35E8048AF1EAA77 = {
+			isa = PBXGroup;
+			children = (
+				8E9DABE9ABFEAFD3A52E94FC /* IRCClient */,
+				C149D544B3F6C4801B4D7A92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C149D544B3F6C4801B4D7A92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C36AE5AAB04DAEDF50D716A /* IRCClient.app */,
+				D077E7ADC33A50CBAC7CD765 /* IRCClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4904E34CF8B3E8D14D51B4A1 /* IRCClient_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1BFB2B766FC2889866520C6 /* Build configuration list for PBXNativeTarget "IRCClient_macOS" */;
+			buildPhases = (
+				ADDB5181606FF17B657082D3 /* Sources */,
+				298B5E951CE2707544071B10 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IRCClient_macOS;
+			packageProductDependencies = (
+				8C8C7B1DC952AB128D3D1528 /* NIO */,
+				BE41F353468B7EF830899CFB /* NIOTransportServices */,
+			);
+			productName = IRCClient_macOS;
+			productReference = D077E7ADC33A50CBAC7CD765 /* IRCClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A0ABBDA2E172DC09729D9E1 /* IRCClient_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78EC73F1AFF8CDCE0889824B /* Build configuration list for PBXNativeTarget "IRCClient_iOS" */;
+			buildPhases = (
+				800046FCDE5BA011D8B4F76A /* Sources */,
+				F81049F9CE16D636215EC35D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IRCClient_iOS;
+			packageProductDependencies = (
+				D97ACD7EB16A10F04048AAF1 /* NIO */,
+				71C71146F2B5AD11132DD72E /* NIOTransportServices */,
+			);
+			productName = IRCClient_iOS;
+			productReference = 3C36AE5AAB04DAEDF50D716A /* IRCClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08BB5BB133152CE66FAD6A52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B92AC7B4FAFC33B269F950A3 /* Build configuration list for PBXProject "IRCClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 950DE068D35E8048AF1EAA77;
+			packageReferences = (
+				F628F5F8A331C9A51A3D3F89 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				A2E33C8614AD62F562BA915B /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A0ABBDA2E172DC09729D9E1 /* IRCClient_iOS */,
+				4904E34CF8B3E8D14D51B4A1 /* IRCClient_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800046FCDE5BA011D8B4F76A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60009B7E09FC989DA21CD39B /* ConnectionView.swift in Sources */,
+				2CDCC4B72C34B1232490C100 /* ConnectionViewModel.swift in Sources */,
+				E3254B5704E0986F50E7CBE0 /* IRCConnection.swift in Sources */,
+				FDA3644E7D3701B23A3B9A6E /* IRCMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDB5181606FF17B657082D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0E821E626BA6D80692F1D0 /* ConnectionView.swift in Sources */,
+				2CC7B3D202F1D6215A9A6FAC /* ConnectionViewModel.swift in Sources */,
+				F0BEB1A3A8E11A352E3AA616 /* IRCConnection.swift in Sources */,
+				CA31A517B4291896F3CBDBDF /* IRCMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0BE5D89B3E91B256046956F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		172B88D7B9AD65906E045D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BACKGROUND_MODES = YES;
+				INFOPLIST_FILE = IRCClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ircclient.IRCClient-macOS";
+				PRODUCT_NAME = IRCClient;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A8D91B66D79A5F752A9A9A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C359C2CF0FDA467FA428F7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BACKGROUND_MODES = YES;
+				INFOPLIST_FILE = IRCClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ircclient.IRCClient-iOS";
+				PRODUCT_NAME = IRCClient;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F16C6C2D7F762B935A40BEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BACKGROUND_MODES = YES;
+				INFOPLIST_FILE = IRCClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ircclient.IRCClient-macOS";
+				PRODUCT_NAME = IRCClient;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FBAB25469788CF4B9B6FE5F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BACKGROUND_MODES = YES;
+				INFOPLIST_FILE = IRCClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ircclient.IRCClient-iOS";
+				PRODUCT_NAME = IRCClient;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78EC73F1AFF8CDCE0889824B /* Build configuration list for PBXNativeTarget "IRCClient_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAB25469788CF4B9B6FE5F6 /* Debug */,
+				C359C2CF0FDA467FA428F7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B92AC7B4FAFC33B269F950A3 /* Build configuration list for PBXProject "IRCClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D91B66D79A5F752A9A9A53 /* Debug */,
+				0BE5D89B3E91B256046956F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1BFB2B766FC2889866520C6 /* Build configuration list for PBXNativeTarget "IRCClient_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16C6C2D7F762B935A40BEBD /* Debug */,
+				172B88D7B9AD65906E045D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2E33C8614AD62F562BA915B /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-transport-services.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F628F5F8A331C9A51A3D3F89 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71C71146F2B5AD11132DD72E /* NIOTransportServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2E33C8614AD62F562BA915B /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
+			productName = NIOTransportServices;
+		};
+		8C8C7B1DC952AB128D3D1528 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F628F5F8A331C9A51A3D3F89 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		BE41F353468B7EF830899CFB /* NIOTransportServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2E33C8614AD62F562BA915B /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
+			productName = NIOTransportServices;
+		};
+		D97ACD7EB16A10F04048AAF1 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F628F5F8A331C9A51A3D3F89 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 08BB5BB133152CE66FAD6A52 /* Project object */;
+}
